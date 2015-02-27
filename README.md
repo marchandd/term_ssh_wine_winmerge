@@ -22,7 +22,7 @@ Run scripts for Windows Portable-apps samples to install and use like explain in
 
 | State | Portable-app  
 | --- | ---  
-| Gold | [WinMerge](https://github.com/marchandd/term_ssh_wine_portableapps/blob/master/docs/winmerge.md "WinMerge_Details") Portable-app  
+| Gold | [WinMerge](https://github.com/marchandd/term_ssh_wine_winmerge/blob/master/docs/winmerge.md "WinMerge_Details") Portable-app  
 
 ### Image size
 
