@@ -1,8 +1,8 @@
 #!/bin/bash
-#DM*20141219 WinMergePortable(2.14.0) English version succesfully based
-#On Host: KUbuntu(14.10), Docker(1.4.1)
-#On Client with Root account: Ubuntu(14.10), Wine(1.17.32)
-
+#DM*20151117 WinMergePortable(2.14.0) English version succesfully based
+#On Host: KUbuntu(15.10), Docker(1.9.0)
+#On Client with Root account: Ubuntu(14.10), Wine(1.17.50)
+#DM*20151117 downloadFilePath basic selection files
 #Specific Windows PortableApps registry
 winProgramName="WinMergePortable"
 pafStandardProgramName="WinMergePortable.paf.exe"
@@ -11,7 +11,7 @@ postInstallAliasScript="postInstall_AliasForWinmergePortable.sh"
 downloadPattern=~/Downloads/WinMergePortable*.paf.exe
 
 #Common for all Windows PortableApps registry
-downloadFilePath=$(find $downloadPattern)
+downloadFilePath=$(find $downloadPattern -daystart | tail -n 1)
 installDirectory=~/.wine/drive_c/Installers
 installFilePath=$installDirectory/$pafStandardProgramName
 portableAppsDirectory=~/.wine/drive_c/PortableApps
